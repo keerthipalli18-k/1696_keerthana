@@ -8,45 +8,8 @@ The user is first prompted to enter the number of buses, after which the program
 
 The system is simple, memory-efficient, and useful for beginners learning how to manage grouped data in C. Although basic, it can be extended to include features such as searching, sorting, file handling, or dynamic memory allocation. Overall, this project provides a foundational understanding of data organization and struct usage in C programming.
 
+<img width="544" height="940" alt="Screenshot 2025-11-20 232709" src="https://github.com/user-attachments/assets/ca272159-81b6-4dfd-a3ce-a98263c0d876" />
 
 
 
 
-📸 Screenshot 1 – Input Phase
-Enter number of buses: 3
-
-Enter details of bus 1:
-Bus Number: 101
-Driver Name: Ramesh
-Source: Delhi
-Destination: Jaipur
-
-Enter details of bus 2:
-Bus Number: 205
-Driver Name: Arjun
-Source: Mumbai
-Destination: Pune
-
-Enter details of bus 3:
-Bus Number: 310
-Driver Name: Suresh
-Source: Chennai
-Destination: Bangalore
-
-📸 Screenshot 2 – Output Display
---- Bus Fleet Details ---
-
-Bus 1:
-Bus Number: 101
-Driver Name: Ramesh
-Route: Delhi -> Jaipur
-
-Bus 2:
-Bus Number: 205
-Driver Name: Arjun
-Route: Mumbai -> Pune
-
-Bus 3:
-Bus Number: 310
-Driver Name: Suresh
-Route: Chennai -> Bangalore# 1696_keerthana
