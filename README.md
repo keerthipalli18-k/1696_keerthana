@@ -1,15 +1,102 @@
-bus flet management system
+PROJECT TITLE
 
-Abstract 
+Bus Fleet Management System Using C Programming
 
-This project, Bus Fleet Management System, is a simple console-based application developed in the C programming language. The goal of the system is to store and display essential information about buses in a transportation fleet. The program uses a user-defined structure (struct Bus) to hold details such as the bus number, driver name, source location, and destination. Multiple records are stored using an array of structures.
+✅ PROJECT ABSTRACT
 
-The user is first prompted to enter the number of buses, after which the program collects details for each bus through standard input. Once the data entry is complete, the system displays all stored bus details in a clean, readable format. This project demonstrates fundamental C concepts such as structure declaration, array handling, formatted input/output functions, and iterative processing.
+The Bus Fleet Management System is a menu-driven C program designed to manage bus records efficiently for transport organizations. This system allows the user to add, view, search, update, and delete bus details such as bus number, driver name, source, destination, and seating capacity. The project uses structures, arrays, and functions to organize and manage data effectively. This system reduces manual record-keeping, minimizes errors, and improves data accessibility. It is simple, fast, and suitable for small-scale transport management.
 
-The system is simple, memory-efficient, and useful for beginners learning how to manage grouped data in C. Although basic, it can be extended to include features such as searching, sorting, file handling, or dynamic memory allocation. Overall, this project provides a foundational understanding of data organization and struct usage in C programming.
+✅ PROJECT FEATURES
 
-<img width="544" height="940" alt="Screenshot 2025-11-20 232709" src="https://github.com/user-attachments/assets/ca272159-81b6-4dfd-a3ce-a98263c0d876" />
+✅ Add new bus details
+✅ Display all bus records
+✅ Search bus using bus number
+✅ Update bus information
+✅ Delete bus records
+✅ Menu-driven interface
+✅ Uses structures and functions
+✅ Fast and efficient data handling
+✅ Beginner-friendly coding logic
+✅ Can be extended with file handling for data storage
 
+✅ MODULES USED IN PROJECT (Functions)
 
+addBus() – Add a new bus
 
+displayBuses() – View all buses
 
+searchBus() – Search bus by bus number
+
+updateBus() – Modify bus details
+
+deleteBus() – Remove bus record
+
+menu() – Control program operations
+
+✅ SOFTWARE & HARDWARE REQUIREMENTS
+Software Requirements
+
+Operating System: Windows / Linux / Mac
+
+Compiler: GCC / Turbo C / Code::Blocks / Dev C++
+
+Programming Language: C
+
+Hardware Requirements
+
+Minimum 2 GB RAM
+
+Any basic computer system
+
+✅ SCREENSHOTS (SAMPLE OUTPUT FOR REPORT)
+
+You can paste these as output screenshots in your project document:
+
+🔹 Screenshot 1: Main Menu
+======= BUS FLEET MANAGEMENT SYSTEM =======
+1. Add Bus
+2. Display All Buses
+3. Search Bus
+4. Update Bus
+5. Delete Bus
+6. Exit
+Enter your choice: 1
+
+🔹 Screenshot 2: Add Bus
+Enter Bus Number: 101
+Enter Driver Name: Ramesh
+Enter Source: Hyderabad
+Enter Destination: Vijayawada
+Enter Bus Capacity: 50
+✅ Bus added successfully!
+
+🔹 Screenshot 3: Display All Buses
+===== BUS DETAILS =====
+
+Bus 1 Details:
+Bus Number: 101
+Driver Name: Ramesh
+Source: Hyderabad
+Destination: Vijayawada
+Capacity: 50
+
+🔹 Screenshot 4: Search Bus
+Enter Bus Number to Search: 101
+
+✅ Bus Found:
+Driver: Ramesh
+Source: Hyderabad
+Destination: Vijayawada
+Capacity: 50
+
+🔹 Screenshot 5: Update Bus
+Enter Bus Number to Update: 101
+Enter New Driver Name: Suresh
+Enter New Source: Hyderabad
+Enter New Destination: Chennai
+Enter New Capacity: 52
+✅ Bus details updated successfully!
+
+🔹 Screenshot 6: Delete Bus
+Enter Bus Number to Delete: 101
+✅ Bus deleted successfully!
