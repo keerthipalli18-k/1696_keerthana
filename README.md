@@ -1,3 +1,7 @@
+<img width="639" height="399" alt="Screenshot 2025-11-26 034029" src="https://github.com/user-attachments/assets/4cc6b2c3-5685-4b86-b2fd-d0fa82e0bbc5" />
+<img width="654" height="428" alt="Screenshot 2025-11-26 034016" src="https://github.com/user-attachments/assets/18326c51-de50-4c10-94b7-1d300e4603b5" />
+<img width="682" height="485" alt="Screenshot 2025-11-26 034001" src="https://github.com/user-attachments/assets/37b0473e-0429-4cd0-a25e-eaf30c540865" />
+<img width="631" height="455" alt="Screenshot 2025-11-26 034009" src="https://github.com/user-attachments/assets/c6cc9a3b-2180-4a2f-835b-b54bf6e5d3e3" />
 PROJECT TITLE
 
 Bus Fleet Management System Using C Programming
@@ -99,4 +103,4 @@ Enter New Capacity: 52
 
 🔹 Screenshot 6: Delete Bus
 Enter Bus Number to Delete: 101
-✅ Bus deleted successfully!
+✅ Bus deleted successfully!<img width="700" height="570" alt="Screenshot 2025-11-26 034039" src="https://github.com/user-attachments/assets/b2b866a7-bbba-496b-b9ea-75381f50bd60" />
