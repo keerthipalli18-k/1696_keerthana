@@ -1,1 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keerthi Reddy | AI Portfolio</title>
 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f5f0;
+            color: #111;
+            line-height: 1.5;
+        }
+
+        /* HEADER */
+        header {
+            border-bottom: 5px solid #111;
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #ff4d00;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: 900;
+            letter-spacing: -2px;
+        }
+
+        nav a {
+            color: #111;
+            text-decoration: none;
+            font-weight: 800;
+            margin-left: 25px;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 90vh;
+            padding: 80px 5%;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            align-items: center;
+            border-bottom: 5px solid #111;
+        }
+
+        .hero h1 {
+            font-size: clamp(70px, 12vw, 180px);
+            line-height: 0.8;
+            letter-spacing: -10px;
+            font-weight: 1000;
+            text-transform: uppercase;
+        }
+
+        .hero h1 span {
+            color: #ff4d00;
+            -webkit-text-stroke: 3px #111;
+        }
+
+        .hero-text {
+            font-size: 22px;
+            font-weight: 700;
+            margin-top: 40px;
+            max-width: 700px;
+        }
+
+        .ai-box {
+            background: #7b2cff;
+            border: 5px solid #111;
+            padding: 30px;
+            box-shadow: 15px 15px 0 #111;
+            transform: rotate(2deg);
+        }
+
+        .ai-box h2 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .ai-box p {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 80px 5%;
+            border-bottom: 5px solid #111;
+        }
+
+        .section-title {
+            font-size: clamp(45px, 7vw, 90px);
+            line-height: 0.9;
+            text-transform: uppercase;
+            font-weight: 1000;
+            letter-spacing: -5px;
+            margin-bottom: 50px;
+        }
+
+        /* ABOUT */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 30px;
+        }
+
+        .about-card {
+            border: 5px solid #111;
+            padding: 30px;
+            background: #fff;
+            box-shadow: 10px 10px 0 #111;
+        }
+
+        .about-card h3 {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .about-card p {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        /* SKILLS */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill {
+            border: 4px solid #111;
+            padding: 15px 25px;
+            font-size: 20px;
+            font-weight: 900;
+            background: #fff;
+            box-shadow: 6px 6px 0 #111;
+        }
+
+        .skill:nth-child(2n) {
+            background: #00e5ff;
+        }
+
+        .skill:nth-child(3n) {
+            background: #7b2cff;
+            color: #fff;
+        }
+
+        /* PROJECTS */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .project {
+            border: 5px solid #111;
+            padding: 30px;
+            background: #fff;
+            min-height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 12px 12px 0 #111;
+        }
+
+        .project:nth-child(1) {
+            background: #00e5ff;
+        }
+
+        .project:nth-child(2) {
+            background: #ff4d00;
+        }
+
+        .project:nth-child(3) {
+            background: #7b2cff;
+            color: #fff;
+        }
+
+        .project:nth-child(4) {
+            background: #ffe600;
+        }
+
+        .project-number {
+            font-size: 20px;
+            font-weight: 900;
+        }
+
+        .project h3 {
+            font-size: 40px;
+            text-transform: uppercase;
+            line-height: 1;
+            margin: 20px 0;
+        }
+
+        .project p {
+            font-size: 17px;
+            font-weight: 700;
+        }
+
+        /* CONTACT */
+        .contact {
+            background: #111;
+            color: #fff;
+        }
+
+        .contact .section-title {
+            color: #fff;
+        }
+
+        .contact-box {
+            border: 5px solid #fff;
+            padding: 40px;
+            max-width: 900px;
+        }
+
+        .contact-box p {
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        .contact-link {
+            display: inline-block;
+            background: #ff4d00;
+            color: #111;
+            border: 4px solid #fff;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-weight: 900;
+            font-size: 20px;
+            margin: 5px;
+        }
+
+        .contact-link:hover {
+            background: #00e5ff;
+            transform: translate(-3px, -3px);
+        }
+
+        /* FOOTER */
+        footer {
+            padding: 25px 5%;
+            background: #ff4d00;
+            border-top: 5px solid #111;
+            font-weight: 900;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* MOBILE */
+        @media (max-width: 800px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 13px;
+            }
+
+            .hero {
+                grid-template-columns: 1fr;
+                padding-top: 60px;
+            }
+
+            .hero h1 {
+                font-size: 70px;
+                letter-spacing: -5px;
+            }
+
+            .about-grid,
+            .projects {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 60px 5%;
+            }
+
+            .section-title {
+                font-size: 55px;
+            }
+
+            footer {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">KR_01</div>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <!-- HERO -->
+    <main>
+
+        <section class="hero">
+            <div>
+                <h1>
+                    KEERTHI<br>
+                    <span>REDDY</span>
+                </h1>
+
+                <p class="hero-text">
+                    CSE STUDENT / DEVELOPER / AI ENTHUSIAST
+                    <br>
+                    Building ideas with code, creativity and artificial intelligence.
+                </p>
+            </div>
+
+            <div class="ai-box">
+                <h2>AI_CORE.exe</h2>
+
+                <p>
+                    STATUS: ONLINE
+                </p>
+
+                <p>
+                    THINK → BUILD → BREAK → LEARN → REPEAT
+                </p>
+
+                <br>
+
+                <p>
+                    SYSTEM MESSAGE:
+                    <br>
+                    "Future is built, not predicted."
+                </p>
+            </div>
+        </section>
+
+
+        <!-- ABOUT -->
+        <section id="about">
+
+            <h2 class="section-title">01 / ABOUT</h2>
+
+            <div class="about-grid">
+
+                <div class="about-card">
+                    <h3>WHO?</h3>
+                    <p>
+                        I'm Keerthi Reddy, a Computer Science &
+                        Engineering student interested in software,
+                        AI and technology.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <h3>WHAT I DO</h3>
+                    <p>
+                        I enjoy learning programming, building projects,
+                        exploring artificial intelligence and solving
+                        problems through technology.
+                        My goal is to become a strong software developer
+                        and continuously improve my technical skills.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SKILLS -->
+        <section id="skills">
+
+            <h2 class="section-title">02 / SKILLS</h2>
+
+            <div class="skills">
+
+                <div class="skill">C</div>
+                <div class="skill">PYTHON</div>
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">DATA STRUCTURES</div>
+                <div class="skill">ALGORITHMS</div>
+                <div class="skill">GIT</div>
+                <div class="skill">AI</div>
+                <div class="skill">PROBLEM SOLVING</div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROJECTS -->
+        <section id="projects">
+
+            <h2 class="section-title">03 / PROJECTS</h2>
+
+            <div class="projects">
+
+                <div class="project">
+                    <div>
+                        <div class="project-number">PROJECT_01</div>
+                        <h3>Vehicle Fleet Management</h3>
+
+                        <p>
+                            A C-based management system using structures,
+                            dynamic memory allocation and CRUD operations.
+                        </p>
+                    </div>
+
+                    <strong> C / DATA STRUCTURES </strong>
+                </div>
+
+
+                <div class="project">
+                    <div>
+                        <div class="project-number">PROJECT_02</div>
+                        <h3>Banking System</h3>
+
+                        <p>
+                            A programming project designed to manage
+                            banking operations and customer information.
+                        </p>
+                    </div>
+
+                    <strong> C / FILE HANDLING </strong>
+                </div>
+
+
+                <div class="project">
+                    <div>
+                        <div class="project-number">PROJECT_03</div>
+                        <h3>Python Projects</h3>
+
+                        <p>
+                            Collection of Python programs covering
+                            algorithms, OOP, file handling and problem solving.
+                        </p>
+                    </div>
+
+                    <strong> PYTHON / ALGORITHMS </strong>
+                </div>
+
+
+                <div class="project">
+                    <div>
+                        <div class="project-number">PROJECT_04</div>
+                        <h3>AI Experiments</h3>
+
+                        <p>
+                            Exploring artificial intelligence, automation
+                            and creative applications of modern AI tools.
+                        </p>
+                    </div>
+
+                    <strong> AI / EXPERIMENTAL </strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+        <section id="contact" class="contact">
+
+            <h2 class="section-title">04 / CONTACT</h2>
+
+            <div class="contact-box">
+
+                <p>
+                    HAVE AN IDEA?
+                    <br>
+                    LET'S BUILD SOMETHING.
+                </p>
+
+                <a class="contact-link" href="mailto:yourmail@example.com">
+                    EMAIL
+                </a>
+
+                <a class="contact-link" href="#">
+                    GITHUB
+                </a>
+
+                <a class="contact-link" href="#">
+                    LINKEDIN
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <span>© 2026 KEERTHI REDDY</span>
+        <span>BUILT WITH HTML + CSS + AI</span>
+    </footer>
+
+</body>
+</html>
